@@ -1,0 +1,27 @@
+rest:
+  port: ":8080"
+
+database:
+  name: energi
+  host: 127.0.0.1
+  port: 3306
+  user: user
+  pass: pass
+  driver: mysql
+  root_user: root
+  root_pass: root
+
+indexer:
+  address: ":8081"
+  host: "http://localhost"
+  token: "secret"
+  endpoint: "https://mainnet.infura.io/v3/7890f63ce5af4341bb4954ea94af6549"
+  limiter:
+    rate: 3
+    duration: "1s"
+  workers: 5
+  timeout: "30s"
+  chan_size: 16
+
+store:
+  path: "./tmp/"
