@@ -1,0 +1,21 @@
+linters-settings:
+  gocyclo:
+    min-complexity: 50
+  revive:
+    rules:
+      - name: blank-imports
+        disabled: true
+
+linters:
+  disable-all: true
+  enable:
+    - gofmt
+    - goimports
+    - gocyclo
+    - gosec
+    - gosimple
+    - revive
+    - stylecheck
+
+run:
+  issues-exit-code: 1
